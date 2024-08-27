@@ -5,7 +5,7 @@
 class Solution {
 public:
     double maxProbability(int n, std::vector<std::vector<int>>& edges, std::vector<double>& succProb, int start_node, int end_node) {
-        std::vector<std::vector<std::pair<int, double>>> graph(n); //adjacency list
+        std::vector<std::vector<std::pair<int, double>>> graph(n); //For an adjacency list, the structure can be like this:
         
         // Construct the graph
         for (int i = 0; i < edges.size(); ++i) {
